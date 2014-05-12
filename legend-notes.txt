@@ -1,0 +1,11 @@
+124,440 =Légende
+60,371 lrLivres
+60,339 orTaverne
+60,307 rrMagie et runes
+60,275 mrMagasin central
+60,243 trPortails
+60,211 frForgeron
+60,179 prHerboriste
+60,147 wrTemple
+60,115 drDépôt
+60,83 arApothicaire

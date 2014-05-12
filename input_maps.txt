@@ -1,0 +1,165 @@
+1_archeron -s
+1_cite_port_cave -s
+1_cite_port
+1_cite_port_int2
+1_cite_port_int
+1_cite_port_temple_metal
+1_debutant_int -b
+1_equipee_gobeline
+1_equipee_pirate
+1_fosse
+1_galeinth_aseyis
+1_galeinth_aseyis_int
+1_gilde_ange
+1_gilde_ci
+1_gilde_mage
+1_gilde_mercenaire
+1_gilde_patrouilleurs
+1_gilde_village
+1_grottes
+1_illumen
+1_illumen_grotte -c
+1_illumen_int
+1_illumen_mine
+1_int_divers
+1_kasteel
+1_kasteel_karmien
+1_kilaran -s
+1_kilaran_sud
+1_kilaran_sud_int
+1_morcraven_cave -s
+1_morcraven
+1_morcraven_int2
+1_morcraven_int
+1_naralik_catacombes2
+1_naralik_catacombes -s
+1_naralik
+1_naralik_int2
+1_naralik_int
+1_naralik_laby
+1_navire_calme
+1_navire
+1_navire_int -b
+1_nid_aigle
+1_nord_thyl_cave
+1_nord_thyl_caverne -s
+1_nord_thyl
+1_nord_thyl_int
+1_p_b_fort_eldo
+1_pierre_blanche_arene
+1_pierre_blanche_cave -c
+1_pierre_blanche
+1_pierre_blanche_int
+1_salle_portails -s
+1_seridia_dock
+1_starenlith
+1_starenlith_grotte
+1_starenlith_int
+1_starenlith_jardin
+1_starenlith_manoir
+1_taharaji_cave
+1_tahraji
+1_tarsengaard_crypte
+1_tarsengaard
+1_tarsengaard_int
+1_tarsengaard_palais_cave
+1_tarsengaard_palais
+1_tarsengaard_palais_jardin -s
+1_thyl_dur
+1_trepont
+1_trepont_int
+1_turquoise_laby -b
+1_tyrnim_crypte
+1_tyrnim
+1_zork_len
+1_zork_len_int
+2_aeth_aelfan_cave1
+2_aeth_aelfan_cave2
+2_aeth_aelfan
+2_aeth_aelfan_fort
+2_aeth_aelfan_int
+2_anitora
+2_anitora_port
+2_arius
+2_arius_int
+2_egratia_comptoir_int
+2_egratia
+2_egratia_temple
+2_exterieurs_divers
+2_fenegor_cave
+2_fenegor
+2_fenegor_int
+2_gallion
+2_gallion_int
+2_gilde_coterie
+2_glakhmor -s
+2_glakhmor_int
+2_grottes
+2_hulda
+2_hulda_int -s
+2_idaloran_cave
+2_idaloran -s
+2_idaloran_int
+2_idaloran_mine
+2_ile_oublies
+2_ile_oublies_int
+2_iriliel_cave
+2_iriliel -t
+2_iriliel_int
+2_irinveron_cave
+2_irinveron
+2_irinveron_int
+2_irissadith_cave
+2_irissadith
+2_irissadith_gilde_magique -t
+2_irissadith_int
+2_irissadith_souterrain
+2_iscalrith_cave
+2_iscalrith
+2_iscalrith_int
+2_kial_kraw_cave
+2_kial_kraw_divers
+2_kial_kraw
+2_kial_kraw_int
+2_kusamura
+2_kusamura_int
+2_kusamura_temple
+2_melinis_cave
+2_melinis
+2_melinis_int
+2_nargraw_nord_cave -s
+2_nargraw_nord -t
+2_nargraw_nord_int
+2_nargraw_nord_volcan
+2_nargraw_sud
+2_nargraw_sud_int -t
+2_nargraw_sud_mont
+2_nivros
+2_nivros_int
+2_nukavuri_crypte
+2_nukavuri
+2_nukavuri_int
+2_salle_portails -s
+2_saonar_kraw_cave -s
+2_saonar_kraw
+2_saonar_kraw_laby1
+2_saonar_kraw_laby2
+2_saonar_kraw_laby3
+2_saonar_kraw_laby4
+2_saonar_kraw_laby5
+2_saonar_kraw_laby6 -s
+2_styx -s -c
+2_temple_zarin
+2_thelinor_cave
+2_thelinor
+2_thelinor_int -t -s
+2_trassian_cave
+2_trassian
+2_trassian_int
+2_yrsis
+2_yrsis_int
+2_yrsis_vyrsaliss
+2_yrsis_vyrsaliss_int
+2_zirak_inbar_cave -s
+2_zirak_inbar
+2_zirak_inbar_int -s

@@ -1,0 +1,15 @@
+Seridia 232 32 328 128 ./maps/1_zork_len.elm
+Seridia 359 81 407 129 ./maps/1_tyrnim.elm
+Seridia 436 75 484 123 ./maps/1_trepont.elm
+Seridia 331 323 427 419 ./maps/1_tarsengaard.elm
+Seridia 25 278 121 374 ./maps/1_tahraji.elm
+Seridia 132 325 228 421 ./maps/1_starenlith.elm
+Seridia 233 129 425 321 ./maps/1_pierre_blanche.elm
+Seridia 287 324 335 372 ./maps/1_nord_thyl.elm
+Seridia 179 80 227 128 ./maps/1_naralik.elm
+Seridia 143 130 239 226 ./maps/1_morcraven.elm
+Seridia 238 322 286 370 ./maps/1_kilaran_sud.elm
+Seridia 235 377 283 425 ./maps/1_kilaran.elm
+Seridia 283 372 331 420 ./maps/1_illumen.elm
+Seridia 80 383 128 431 ./maps/1_galeinth_aseyis.elm
+Seridia 132 230 228 326 ./maps/1_cite_port.elm
