@@ -1,0 +1,4 @@
+49,13 =Caverne de Thyl-dûr
+178,170 >sta
+12,177 >sta
+150,25 s

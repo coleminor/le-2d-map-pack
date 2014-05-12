@@ -1,0 +1,11 @@
+128,30 =Péninsule de Zork'len
+255,251 .Mer des Brumes
+319,124 >cdp
+298,93 .Omlinor
+61,132 .Ywarstav
+64,113 l
+64,321 .Marais du Styx
+17,350 >nar
+114,363 >pie
+321,52 .Mer Bleue
+275,39 s

@@ -1,0 +1,14 @@
+99,27 =Aeth Aelfan
+103,90 .Forêt des Anciens
+324,60 .Pointe du Lothal
+342,150 .Port Aeth
+321,211 .Aeth Lothal
+303,336 .Vallée du Coeur Sombre
+194,365 .Chutes du Lothal
+147,342 .Vyhaliss
+108,190 .Lothaliss
+55,292 .Vyhaliss Lothal
+363,246 >egr
+36,364 >kus
+19,316 >irl
+228,40 s

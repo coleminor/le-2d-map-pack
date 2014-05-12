@@ -1,0 +1,12 @@
+45,100 .Grwor Kraw
+129,122 .Thelin Dar'úm
+210,115 .Hynta Kraw
+319,68 .Qûrpham
+99,159 .Marh Kraw
+114,347 .Thelin Kraw
+297,287 l
+270,266 >nan
+46,18 >zir
+16,269 >irs
+269,34 s
+73,44 =Thelinor

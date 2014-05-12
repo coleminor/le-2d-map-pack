@@ -1,0 +1,8 @@
+92,13 >kis
+14,42 >sta
+77,119 .Fort Baarg
+75,62 .Fort Tin Lath
+153,57 .Fort Enur
+68,26 =La Marche de Kilaran
+172,98 >ill
+158,25 s

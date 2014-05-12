@@ -1,7 +1,8 @@
 #!/bin/bash
 
-note_dir=.
 font="BlackChancery"
+
+note_dir="./notes"
 remove_temporary_files=1
 smooth_mask=0
 transparent_background=1

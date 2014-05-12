@@ -1,0 +1,12 @@
+60,8 =Nivros-Um
+18,43 d
+20,22 r
+13,104 >kia
+116,143 .Jungle de Zenias
+98,86 .Les Sables Maudits
+180,47 >mel
+159,35 .Mont Avigror
+121,11 >irs
+71,45 .Cité de Nivros-Um
+56,29 o
+149,23 s

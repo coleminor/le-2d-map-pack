@@ -1,0 +1,9 @@
+60,17 =Pointe d'Égratia
+54,44 >isc
+60,94 .Plaine d'Égratia
+138,83 .Arène Egret
+141,9 .Mer glacée d'Arvilion
+73,167 .Forêt d'Égratia
+14,161 >aet
+151,172 >zir
+163,30 s

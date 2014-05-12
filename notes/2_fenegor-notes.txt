@@ -1,0 +1,13 @@
+234,133 .Monts des Mille Larmes
+252,252 d
+270,251 a
+280,235 f
+294,274 o
+52,160 .Bois de Garyt
+140,36 =Fenegor
+229,267 .Passage de Fenegor
+17,246 >yrs
+362,215 >kus
+323,356 >ida
+331,48 s
+316,19 >irl

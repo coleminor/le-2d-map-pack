@@ -1,5 +1,6 @@
 #!/bin/bash
 
+note_dir="./notes"
 font=BlackChancery
 s=1024
 
@@ -12,7 +13,7 @@ if [ -z "$n" -o -z "$scale" ]; then
 fi
 
 o="$n.jpg"
-f_notes="$n-notes.txt"
+f_notes="$note_dir/$n-notes.txt"
 f_merged="merged-$n.png"
 
 if [ ! -f "$f_notes" ]; then

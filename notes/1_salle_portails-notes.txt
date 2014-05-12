@@ -1,0 +1,16 @@
+63,25 trpie
+32,25 tlill
+32,14 tlcdp
+32,7 tlgal
+47,13 tdtre
+63,13 trsta
+63,55 trtar
+63,72 trnar
+57,79 trkil
+47,79 tuzor
+38,79 tlkis
+32,73 tlmor
+32,55 tltyr
+63,63 trnor
+32,63 tltah
+80,11 s

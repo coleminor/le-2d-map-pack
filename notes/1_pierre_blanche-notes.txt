@@ -1,0 +1,46 @@
+314,382 .Val d'Alganiel
+466,423 d
+656,412 .Kasteel Altania
+518,553 .Les Onze Dents d'Elvaro
+627,663 .Ruines d'Eldorion
+160,618 f
+171,624 m
+123,663 r
+50,627 l
+121,722 p
+118,704 a
+130,641 o
+82,685 o
+84,698 m
+210,341 r
+81,511 t
+482,508 t
+574,137 f
+590,151 o
+529,194 .Cité de la Rive
+676,86 .Lac de Serpentine
+726,134 >sta
+709,152 >tre
+573,156 m
+153,201 .Bourg Thylion
+505,142 t
+144,250 t
+61,413 .Montagnes d'Orvale
+26,562 >cdp
+112,51 >zor
+157,162 l
+144,139 r
+158,139 o
+100,260 >mor
+241,706 .Cité de Pierre Blanche
+140,737 >kis
+303,737 >nor
+710,737 >tar
+567,29 >tyr
+365,102 =Pierre Blanche
+332,29 .Mer des Brumes
+463,62 s
+250,340 w
+639,685 w
+650,387 w
+316,618 .Froideforêt

@@ -1,0 +1,6 @@
+161,68 d
+31,131 >sta
+21,59 >tah
+167,85 >sta
+52,17 =Galein'th Aseyis
+159,20 s

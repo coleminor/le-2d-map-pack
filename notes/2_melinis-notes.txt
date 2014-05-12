@@ -1,0 +1,11 @@
+80,34 =Melinis
+43,89 >niv
+106,143 .Désert de cristal
+212,260 >ida
+242,267 >nuk
+233,238 d
+168,280 f
+269,183 o
+109,346 .Emdur-Um
+216,206 .Melinis Kraw
+312,46 s

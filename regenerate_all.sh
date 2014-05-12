@@ -1,7 +1,7 @@
 #!/bin/bash
-note_dir='../run/maps/notes'
 map_dir='../run/maps'
 map_ext='.elm.gz'
+note_dir='./notes'
 
 sed_expr="s,^\\([^ ]*\\),$map_dir/\\1$map_ext,"
 cat input_maps.txt \

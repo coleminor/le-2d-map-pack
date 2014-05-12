@@ -1,0 +1,12 @@
+92,58 .Cité d'Iscalrith
+56,16 =Iscalrith
+322,18 >hul
+264,69 .Fort Myr Uyn
+16,171 >gla
+243,348 >egr
+257,340 >sao
+276,351 >irn
+263,322 d
+122,105 .Lac Myr Uan
+57,282 .Mer gelée d'Irvilion
+250,29 s

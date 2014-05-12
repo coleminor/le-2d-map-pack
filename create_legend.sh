@@ -2,12 +2,13 @@
 
 i_paper="legend_paper.png"
 font=BlackChancery
+note_dir="./notes"
 
 die() { echo "$@"; exit 1; }
 
 n=legend
 o="$n.jpg"
-f_notes="$n-notes.txt"
+f_notes="$note_dir/$n-notes.txt"
 r_notes="render_notes-$n.png"
 
 if [ -f "$o" -a "$o" -nt "$f_notes" ]; then

@@ -1,0 +1,15 @@
+332,348 .Île de Roanof
+80,24 =Tarsengaard
+165,55 .Cimetière d'Orvimon
+195,183 d
+180,212 o
+168,321 l
+181,321 r
+14,269 >ill
+284,225 >tar
+212,211 l
+337,15 >pie
+174,332 .Palais du Divin Fingel
+335,185 .Mer d'Irilion
+204,30 s
+321,57 w

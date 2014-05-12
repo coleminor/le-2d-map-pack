@@ -1,0 +1,9 @@
+87,179 >kil
+146,158 .Kasteel Karmien
+149,35 .Karmien
+103,12 >pie
+15,57 >sta
+55,88 .Rivère Synti
+50,23 =Kilaran Sud
+180,62 >nor
+164,14 s

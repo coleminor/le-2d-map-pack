@@ -1,0 +1,8 @@
+44,19 =Nukavuri
+50,55 d
+125,102 >zir
+155,82 >mel
+135,140 .Île d'Egmura
+60,85 .Bourg Nukavuri
+163,20 s
+145,99 >nas
