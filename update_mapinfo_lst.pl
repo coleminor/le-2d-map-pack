@@ -51,7 +51,7 @@ sub main {
   while (<$i>) {
     if (/$re_line/) {
       my ($l, $m) = ($1, $2);
-      if (exists $h->{$m}) {
+      if (exists $h->{$m} and $h->{$m} ne $l) {
         $c_replaced++;
         print $o $h->{$m};
         next;
