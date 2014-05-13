@@ -50,7 +50,7 @@ def export_elm_bounds(i, d):
     image_height = i.height
     g = find_layer(i, 'parts')
     n = splitext(i.name)[0]
-    n = re.sub('^parts-', '', n)
+    n = re.sub('^\w+-', '', n)
     c = re.sub('^[0-9]_', '', n)
     continent_name = c.capitalize()
     o = 'mapinfo_lst-' + n + '.txt'
