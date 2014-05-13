@@ -6,9 +6,9 @@
 63,13 trsta
 63,55 trtar
 63,72 trnar
-57,79 trkil
+57,79 trkis
 47,79 tuzor
-38,79 tlkis
+38,79 tlkil
 32,73 tlmor
 32,55 tltyr
 63,63 trnor
