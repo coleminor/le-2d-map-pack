@@ -1,17 +1,17 @@
 210,133 =Seridia
-922,256 .Trépont
-765,251 .Tyrnim
-785,704 .Tarsengaard
+910,255 .Trépont
+736,206 .Tyrnim
+791,712 .Tarsengaard
 645,780 .Illumen
-655,643 .Nord-Thyl
-516,748 .Kilaran Sud
+633,677 .Nord-Thyl
+519,738 .Kilaran Sud
 365,781 .Starenlith
 190,758 .Galein'th Aseyis
-254,631 .Tahraji
-257,518 .Cité du Port
+244,633 .Tahraji
+307,534 .Cité du Port
 321,359 .Morcraven
 446,246 .Naralik
 574,155 .Zork'len
-533,487 .Pierre Blanche
+534,482 .Pierre Blanche
 833,108 s
 523,821 .Kilaran
