@@ -1,26 +1,27 @@
-880,166 .Île des Oubliés
-840,383 .Saonar Kraw
-661,258 .Iscalrith
-689,172 .Hulda
-572,131 .Trassian
-513,221 .Glakhmor
-216,207 .Irinveron
-185,87 =Irilion
-647,82 s
-187,482 .Arius
-338,423 .Irilel
-568,409 .Aeth Aelfan
-660,514 .Égratia
-663,615 .Zirak-Inbar
-828,527 .Nukavuri
-892,694 .Nargraw Sud
-851,814 .Nargraw Nord
-711,933 .Melinis
-724,677 .Thelinor
-534,699 .Irissadith
-514,889 .Kial Kraw
-573,810 .Nivros-Um
-240,864 .Idaloran
-171,677 .Yrsis
-315,605 .Fenegor
-449,633 .Kusamura
+895,162 .Île des Oubliés
+844,379 .Saonar Kraw
+708,298 .Iscalrith
+782,210 .Hulda
+611,170 .Trassian
+560,268 .Glakhmor
+271,273 .Irinveron
+185,106 =Irilion
+662,95 s
+187,375 .Arius
+380,467 .Irilel
+578,410 .Aeth Aelfan
+658,519 .Égratia
+816,531 .Nukavuri
+885,669 .Nargraw Sud
+870,784 .Nargraw Nord
+695,920 .Melinis
+726,722 .Thelinor
+569,679 .Irissadith
+533,873 .Kial Kraw
+597,796 .Nivros-Um
+267,844 .Idaloran
+157,611 .Yrsis
+363,656 .Fenegor
+475,572 .Kusamura
+139,797 .Anitora
+694,626 .Zirak-Inbar
