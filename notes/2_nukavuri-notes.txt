@@ -4,5 +4,5 @@
 155,82 >mel
 135,140 .Île d'Egmura
 60,85 .Bourg Nukavuri
-163,20 s
+163,17 s
 145,99 >nas

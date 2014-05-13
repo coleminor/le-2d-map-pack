@@ -1,8 +1,8 @@
-85,42 =Val d'Iriliel
+84,33 =Val d'Iriliel
 150,134 .Flollen
 338,152 .Lyntheor
 369,293 >aet
 133,327 .Bourg Iriliel
 294,341 .Aelfaniel
 213,366 >fen
-324,37 s
+335,39 s

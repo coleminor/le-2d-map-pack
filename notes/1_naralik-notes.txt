@@ -2,7 +2,7 @@
 123,78 l
 40,176 >mor
 60,107 o
-35,26 =Naralik
-148,26 .Mer Bleue
+46,21 =Naralik
+96,33 .Mer Bleue
 174,65 >zor
-115,18 s
+162,18 s
