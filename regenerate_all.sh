@@ -1,5 +1,5 @@
 #!/bin/bash
-map_dir='../run/maps'
+map_dir='./maps'
 map_ext='.elm.gz'
 note_dir='./notes'
 

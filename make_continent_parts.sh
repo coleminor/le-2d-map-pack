@@ -1,6 +1,6 @@
 #!/bin/bash
 f=mapinfo.lst
-map_dir=../run/maps
+map_dir=./maps
 
 die() { echo "$@"; exit 1; }
 
