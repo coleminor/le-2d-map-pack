@@ -100,19 +100,19 @@ for p in "${args[@]}"; do
   t_pov="temp_scene-$n.pov"
   if [ $force -eq 1 -o ! -f "$r_map" \
       -o "$p" -nt "$r_map" ]; then
-    solid=
-    trans=
+    a_s=
+    a_t=
     c=$small_size_cutoff
     s=$solid_color_terrain
     if [[ $s == 1 || ($s == -1 \
           && ($x > $c || $y > $c)) ]]; then
-      solid=-S
+      a_s=-S
     fi
     if [ $transparent_background -eq 1 ]; then
-      trans=-t
+      a_t=-t
     fi
     echo "--- Running elm2pov.pl"
-    elm2pov.pl -r -m -a -s $size $solid $trans \
+    elm2pov.pl -r -m -a -s $size $a_s $a_t \
       -o "$r_map" -p "$t_pov" "$p" || exit 1
   fi
 
