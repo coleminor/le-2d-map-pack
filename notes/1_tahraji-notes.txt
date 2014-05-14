@@ -1,7 +1,7 @@
 108,50 =Désert de Tahraji
 272,64 .Vallée de Tegriat
 286,311 .Ruines de Matajin
-154,265 .Arène des Invocateurs
+153,244 .Arène des Invocateurs
 115,336 .Mer Bleue
 341,365 >gal
 365,329 >sta

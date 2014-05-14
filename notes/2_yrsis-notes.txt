@@ -3,7 +3,7 @@
 306,166 .Forêt de Vyrsaliss
 369,248 >fen
 273,366 >ida
-39,272 .Mer d'Irilion
+57,269 .Mer d'Irilion
 117,156 .Port Yrsis
 172,184 .Lothyrsiss
 84,178 >zir

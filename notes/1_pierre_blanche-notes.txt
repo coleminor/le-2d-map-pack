@@ -37,7 +37,7 @@
 303,737 >nor
 710,737 >tar
 567,29 >tyr
-365,102 =Pierre Blanche
+335,102 =Pierre Blanche
 332,29 .Mer des Brumes
 463,62 s
 250,340 w

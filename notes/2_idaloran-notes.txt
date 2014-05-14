@@ -9,7 +9,7 @@
 351,430 .Myrt'Ul
 494,535 .Nymorq
 259,478 .Tryssir Nord
-87,679 .Mer d'Irilion
+133,666 .Mer d'Irilion
 223,565 .Côte du Jahir
 226,381 .Cimetière
 163,281 >ani

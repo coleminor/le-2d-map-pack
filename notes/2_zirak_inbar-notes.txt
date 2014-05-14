@@ -6,7 +6,7 @@
 313,160 .Fûrgham
 240,350 >the
 79,279 d
-58,29 =Zirak-Inbar
+87,33 =Zirak-Inbar
 75,351 o
 31,319 l
 55,315 a

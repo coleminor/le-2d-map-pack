@@ -11,12 +11,12 @@
 113,163 t
 108,52 t
 298,285 .Coren
-36,61 .Terres Arides
+51,60 .Terres Arides
 72,20 =Starenlith
 328,337 m
 309,338 o
 173,16 >cdp
-10,220 >tah
+17,220 >tah
 366,54 >kis
 369,265 >kil
 357,351 >pie

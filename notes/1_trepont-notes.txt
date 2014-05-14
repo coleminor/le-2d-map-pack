@@ -1,4 +1,4 @@
-87,14 =L'île du Trépont
+92,18 =L'île du Trépont
 22,22 >pie
 72,140 .Bourg Elouin
 67,131 o

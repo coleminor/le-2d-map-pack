@@ -101,7 +101,7 @@
 2_idaloran -s
 2_idaloran_int
 2_idaloran_mine
-2_ile_oublies
+2_ile_oublies -c
 2_ile_oublies_int
 2_iriliel_cave
 2_iriliel -t
