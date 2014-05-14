@@ -1,17 +1,17 @@
 210,133 =Seridia
-910,255 .Trépont
-736,206 .Tyrnim
-791,712 .Tarsengaard
-645,780 .Illumen
-633,677 .Nord-Thyl
-519,738 .Kilaran Sud
-365,781 .Starenlith
-190,758 .Galein'th Aseyis
-244,633 .Tahraji
-307,534 .Cité du Port
-321,359 .Morcraven
-446,246 .Naralik
-574,155 .Zork'len
-534,482 .Pierre Blanche
+910,255 .tre
+736,206 .tyr
+791,712 .tar
+645,780 .ill
+633,677 .nor
+519,738 .kis
+365,781 .sta
+190,758 .gal
+244,633 .tah
+307,534 .cdp
+321,359 .mor
+446,246 .nar
+574,155 .zor
+534,482 .pie
 833,108 s
-523,821 .Kilaran
+523,821 .kil

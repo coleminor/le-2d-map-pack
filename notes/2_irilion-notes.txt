@@ -1,27 +1,27 @@
-895,162 .Île des Oubliés
-844,379 .Saonar Kraw
-708,298 .Iscalrith
-782,210 .Hulda
-611,170 .Trassian
-560,268 .Glakhmor
-271,273 .Irinveron
+895,162 .oub
+844,379 .sao
+708,298 .isc
+782,210 .hul
+611,170 .tra
+560,268 .gla
+271,273 .irn
 185,106 =Irilion
 662,95 s
-187,375 .Arius
-380,467 .Irilel
-578,410 .Aeth Aelfan
-658,519 .Égratia
-816,531 .Nukavuri
-885,669 .Nargraw Sud
-870,784 .Nargraw Nord
-695,920 .Melinis
-726,722 .Thelinor
-569,679 .Irissadith
-533,873 .Kial Kraw
-597,796 .Nivros-Um
-267,844 .Idaloran
-157,611 .Yrsis
-363,656 .Fenegor
-475,572 .Kusamura
-139,797 .Anitora
-694,626 .Zirak-Inbar
+187,375 .ari
+380,467 .irl
+578,410 .aet
+658,519 .egr
+816,531 .nuk
+885,669 .nas
+870,784 .nan
+695,920 .mel
+726,722 .the
+569,679 .irs
+533,873 .kia
+597,796 .niv
+267,844 .ida
+157,611 .yrs
+363,656 .fen
+475,572 .kus
+139,797 .ani
+694,626 .zir
