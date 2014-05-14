@@ -158,19 +158,32 @@ for p in "${args[@]}"; do
       -compose darken -composite "$r_mask"
   fi
 
-  echo "--- Merging layers"
   r_texture="render_paper_texture.png"
-  if [ ! -f "$r_texture" -o "$i_paper" -nt "$r_texture" ]; then
+  if [ $force -eq 1 -o ! -f "$r_texture" \
+      -o "$i_paper" -nt "$r_texture" ]; then
+    echo "--- Creating paper texture"
     convert "$i_paper" -colorspace gray "$r_texture"
   fi
-  t_bumpy="temp_bumpy-$n.png"
-  convert "$r_map" "$r_texture" \
-    -compose bumpmap -composite \
-    -brightness-contrast 30x40 "$t_bumpy"
-  t_base="temp_base-$n.png"
-  composite "$t_bumpy" "$i_paper" "$r_mask" "$t_base"
+  r_bumpy="render_bumpy-$n.png"
+  if [ $force -eq 1 -o ! -f "$r_bumpy" \
+      -o "$r_map" -nt "$r_bumpy" \
+      -o "$r_texture" -nt "$r_bumpy" ]; then
+    echo "--- Applying bumpmap"
+    convert "$r_map" "$r_texture" \
+      -compose bumpmap -composite \
+      -brightness-contrast 30x40 "$r_bumpy"
+  fi
+
+  echo "--- Merging layers"
+  r_base="render_base-$n.png"
+  if [ $force -eq 1 -o ! -f "$r_base" \
+      -o "$r_bumpy" -nt "$r_base" \
+      -o "$i_paper" -nt "$r_base" \
+      -o "$r_mask" -nt "$r_base" ]; then
+    composite "$r_bumpy" "$i_paper" "$r_mask" "$r_base"
+  fi
   t_framed="temp_framed-$n.png"
-  composite -dissolve 60 "$i_grid" "$t_base" "$t_framed"
+  composite -dissolve 60 "$i_grid" "$r_base" "$t_framed"
   t_all="temp_all-$n.png"
   if [ -f "$r_notes" ]; then
     composite "$r_notes" "$t_framed" "$t_all"
@@ -183,10 +196,10 @@ for p in "${args[@]}"; do
 
   if [ $remove_temporary_files -eq 1 ]; then
     rm -f "$t_fill" "$t_tiles" "$t_near" \
-      "$t_region" "$t_bumpy" "$t_base" "$t_framed" \
-      "$t_all" "$t_pov"
+      "$t_region" "$t_framed" "$t_all" "$t_pov"
   fi
   if [ $delete_rendered -eq 1 ]; then
-    rm -f "$r_map" "$r_notes" "$r_mask" "$r_texture"
+    rm -f "$r_map" "$r_notes" "$r_mask" \
+      "$r_texture" "$r_bumpy" "$r_base"
   fi
 done
