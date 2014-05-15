@@ -10,6 +10,6 @@ cat input_maps.txt \
   ./create_map.sh -n "$note_dir" $l || exit 1
 done
 
-./create_legend.sh
-./create_continent.sh 1_seridia 2.0
-./create_continent.sh 2_irilion 3.0
+./create_legend.sh -n "$note_dir"
+./create_continent.sh -n "$note_dir" -s 2.0 1_seridia
+./create_continent.sh -n "$note_dir" -s 3.0 2_irilion

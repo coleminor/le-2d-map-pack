@@ -2,14 +2,35 @@
 
 note_dir="./notes"
 font=BlackChancery
-s=1024
+size=1024
+scale=1.0
 
 die() { echo "$@"; exit 1; }
 
-n=$1
-scale=$2
-if [ -z "$n" -o -z "$scale" ]; then
-  die "usage: $0 NAME SCALE"
+usage() {
+  cat<<EOS
+usage: $0 [options] NAME
+options:
+  -n PATH   directory containing note files
+  -s FLOAT  continent scale multiplier
+EOS
+  exit 1
+}
+
+args=()
+while [ $# -gt 0 ]; do
+  case "$1" in
+    -h|--help) usage ;;
+    -n) shift; note_dir="$1" ;;
+    -s) shift; scale="$1" ;;
+    *) args+=("$1") ;;
+  esac
+  shift
+done
+
+n=${args[0]}
+if [ -z "$n" ]; then
+  die "expecting NAME argument"
 fi
 
 o="$n.jpg"
@@ -32,7 +53,8 @@ fi
 r_notes="render_notes-$n.png"
 if [ ! -f "$r_notes" -o "$f_notes" -nt "$r_notes" ]; then
   echo "--- Rendering notes '$f_notes'"
-  elm-render-notes -f "$font" -i$s,$s -m$s,$s \
+  elm-render-notes -f "$font" \
+    -i$size,$size -m$size,$size \
     -s $scale -o "$r_notes" "$f_notes"
 fi
 

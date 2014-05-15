@@ -6,6 +6,24 @@ note_dir="./notes"
 
 die() { echo "$@"; exit 1; }
 
+usage() {
+  cat<<EOS
+usage: $0 [options]
+options:
+  -n PATH  directory containing note files
+EOS
+  exit 1
+}
+
+while [ $# -gt 0 ]; do
+  case "$1" in
+    -h|--help) usage ;;
+    -n) shift; note_dir="$1" ;;
+    *) usage ;;
+  esac
+  shift
+done
+
 n=legend
 o="$n.jpg"
 f_notes="$note_dir/$n-notes.txt"
