@@ -4,8 +4,8 @@
 212,260 >ida
 242,267 >nuk
 233,238 d
-168,280 f
+170,276 f
 269,183 o
 109,346 .Emdur-Um
-216,206 .Melinis Kraw
+228,181 .Melinis Kraw
 313,35 s
