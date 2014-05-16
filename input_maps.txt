@@ -128,7 +128,7 @@
 2_melinis
 2_melinis_int
 2_nargraw_nord_cave -s
-2_nargraw_nord -t
+2_nargraw_nord
 2_nargraw_nord_int
 2_nargraw_nord_volcan
 2_nargraw_sud
