@@ -1,6 +1,6 @@
 87,179 >kil
-146,158 .Kasteel Karmien
-149,35 .Karmien
+153,167 .Kasteel Karmien
+147,30 .Karmien
 103,12 >pie
 15,57 >sta
 100,77 .Rivère Synti

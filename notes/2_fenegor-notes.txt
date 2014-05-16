@@ -6,7 +6,7 @@
 52,160 .Bois de Garyt
 140,36 =Fenegor
 229,267 .Passage de Fenegor
-17,246 >yrs
+20,249 >yrs
 362,215 >kus
 323,356 >ida
 338,44 s

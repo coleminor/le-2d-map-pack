@@ -1,12 +1,12 @@
 195,58 =Irinveron
-507,726 .Détroit d'Havian
-66,720 .Mer de Glace
+506,717 .Détroit d'Havian
+99,716 .Mer de Glace
 151,690 >isc
 183,678 >ida
 184,657 >ari
 27,305 d
 72,336 .Pointe d'Erkraw
-378,291 .Lac J'awen
+378,281 .Lac J'awen
 150,542 m
 192,592 o
 548,166 .Daa Gry

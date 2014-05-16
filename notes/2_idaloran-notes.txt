@@ -22,8 +22,8 @@
 630,360 .Désert du Grat Eder
 722,532 >kia
 474,243 .Cité d'Idaloran
-633,30 >kus
+633,32 >kus
 158,34 >yrs
-740,246 >irs
+734,245 >irs
 349,56 s
 136,303 .Port de Tryssir

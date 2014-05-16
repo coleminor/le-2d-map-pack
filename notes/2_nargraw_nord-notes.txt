@@ -1,5 +1,5 @@
 96,35 =Nargraw Nord
-264,260 .Nargraw
+266,253 .Nargraw
 337,356 >ida
 301,343 >the
 263,19 >nas

@@ -7,6 +7,6 @@
 180,47 >mel
 159,35 .Mont Avigror
 121,11 >irs
-71,45 .Cité de Nivros-Um
+66,45 .Cité de Nivros-Um
 56,29 o
 166,15 s

@@ -6,6 +6,6 @@
 360,233 >isc
 241,298 .Mer gelée d'Irvilion
 84,339 .Pointe de Glakhmor
-13,312 >irn
+19,312 >irn
 366,98 >tra
 335,31 s
