@@ -3,6 +3,7 @@
 i_paper="legend_paper.png"
 font=BlackChancery
 note_dir="./notes"
+w='.'
 
 die() { echo "$@"; exit 1; }
 
@@ -11,6 +12,7 @@ usage() {
 usage: $0 [options]
 options:
   -n PATH  directory containing note files
+  -w PATH  directory for intermediate files
 EOS
   exit 1
 }
@@ -19,6 +21,7 @@ while [ $# -gt 0 ]; do
   case "$1" in
     -h|--help) usage ;;
     -n) shift; note_dir="$1" ;;
+    -w) shift; w="$1" ;;
     *) usage ;;
   esac
   shift
@@ -27,11 +30,15 @@ done
 n=legend
 o="$n.jpg"
 f_notes="$note_dir/$n-notes.txt"
-r_notes="render_notes-$n.png"
+r_notes="$w/render_notes-$n.png"
 
 if [ -f "$o" -a "$o" -nt "$f_notes" ]; then
   echo "~~~ $o is up-to-date"
   exit
+fi
+
+if [ ! -f "$i_paper" ]; then
+  die "required image '$i_paper' not found"
 fi
 
 if [ ! -f "$r_notes" -o "$f_notes" -nt "$r_notes" ]; then

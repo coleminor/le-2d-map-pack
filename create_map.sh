@@ -5,13 +5,15 @@ font="BlackChancery"
 note_dir="./notes"
 remove_temporary_files=1
 smooth_mask=0
-transparent_background=1
-solid_color_terrain=-1
+black_background=0
+solid_color_terrain=0
+textured_terrain=0
 force=0
 delete_rendered=0
+w='.'
 
 size=1024
-small_size_cutoff=384
+color_size_limit=192
 i_rect="rect.png"
 i_grid="grid.png"
 i_paper="paper.png"
@@ -19,9 +21,10 @@ i_paper="paper.png"
 die() { echo "$@";  exit 1; }
 
 usage() {
+  c=$color_size_limit
   cat<<EOS
-usage: $0 [options] ELM-FILES
-options:
+Usage: $0 [options] ELM-FILES
+Options:
   -b       render on a black background
   -c       use solid terrain colors
   -d       delete rendered images afterwards
@@ -30,6 +33,11 @@ options:
   -n PATH  directory containing note files
   -s       shrink and smooth mask
   -t       use terrain textures
+  -w PATH  directory for intermediate files
+
+If neither options -c or -t are used, maps
+with more than $c tiles per side will be
+rendered with solid color terrains.
 EOS
   exit 1
 }
@@ -37,7 +45,7 @@ EOS
 args=()
 while [ $# -gt 0 ]; do
   case "$1" in
-    -b) transparent_background=0 ;;
+    -b) black_background=1 ;;
     -c) solid_color_terrain=1 ;;
     -d) delete_rendered=1 ;;
     -f) force=1 ;;
@@ -45,7 +53,8 @@ while [ $# -gt 0 ]; do
     -k) remove_temporary_files=0 ;;
     -n) shift; note_dir="$1" ;;
     -s) smooth_mask=1 ;;
-    -t) solid_color_terrain=0 ;;
+    -t) textured_terrain=1 ;;
+    -w) shift; w="$1" ;;
     *) args+=("$1") ;;
   esac
   shift
@@ -66,46 +75,95 @@ if [ ! -f "$i_paper" ]; then
   die "paper texture image '$i_paper' not found"
 fi
 
+s_render=
+s_render+=b$black_background
+s_render+=c$solid_color_terrain
+s_render+=t$textured_terrain
+
+s_mask=
+s_mask+=b$black_background
+s_mask+=s$smooth_mask
+
+mkdir -p "$w" || die "could not create directory '$w'"
+
 for p in "${args[@]}"; do
   if [ ! -f "$p" ]; then
     die "$p: no such file"
   fi
-  f=`basename $p`
+  read f <<<$(basename "$p")
   n=${f/.gz/}
   n=${n/.elm/}
   if [ "$n" = "$f" ]; then
     die "$p: not a map file"
   fi
-
   o="$n.jpg"
+
+  f_render_settings="$w/settings_render-$n.txt"
+  d_render=0
+  if [ -f "$f_render_settings" ]; then
+    read s_old < "$f_render_settings"
+    if [ "$s_render" != "$s_old" ]; then
+      d_render=1
+    fi
+  fi
+  if [ $force -eq 1 ]; then
+    d_render=1
+  fi
+  echo "$s_render" > "$f_render_settings"
+
+  f_mask_settings="$w/settings_mask-$n.txt"
+  d_mask=0
+  if [ -f "$f_mask_settings" ]; then
+    read s_old < "$f_mask_settings"
+    if [ "$s_mask" != "$s_old" ]; then
+      d_mask=1
+    fi
+  fi
+  if [ $force -eq 1 ]; then
+    d_mask=1
+  fi
+  echo "$s_mask" > "$f_mask_settings"
+
   f_notes="$note_dir/$n-notes.txt"
-  if [ $force -ne 1 -a -f "$o" -a "$o" -nt "$p" \
+  if [ $d_render -eq 0 -a -f "$o" -a "$o" -nt "$p" \
       -a "$o" -nt "$f_notes" -a "$o" -nt "$i_paper" \
       -a "$o" -nt "$i_grid" -a "$o" -nt "$i_rect" ]; then
     echo "~~~ $o is up-to-date"
     continue
   fi
 
-  read x y <<<$(elmhdr "$p" \
+  e=elmhdr
+  if ! which "$e" > /dev/null; then
+    die "required program '$e' missing or not executable"
+  fi
+  read x y <<<$("$e" "$p" \
     | awk '/^terrain_[xy] = [0-9]+/ {print 6*$3}')
   if [ -z "$x" -o -z "$y" ]; then
-    die "$p: could not get map size"
+    die "could not get map size from '$p'"
   fi
-  echo "=== Processing map $n (${x}x$y tiles)"
+  echo "=== Processing $n ${x}x$y" \
+    "$s_render $s_mask"
 
-  r_map="render_map-$n.png"
-  t_pov="temp_scene-$n.pov"
-  if [ $force -eq 1 -o ! -f "$r_map" \
+  r_map="$w/render_map-$n.png"
+  t_pov="$w/temp_scene-$n.pov"
+  if [ $d_render -eq 1 -o ! -f "$r_map" \
       -o "$p" -nt "$r_map" ]; then
     a_s=
     a_t=
-    c=$small_size_cutoff
-    s=$solid_color_terrain
-    if [[ $s == 1 || ($s == -1 \
-          && ($x > $c || $y > $c)) ]]; then
+    if [ $solid_color_terrain -eq 1 ]; then
       a_s=-S
     fi
-    if [ $transparent_background -eq 1 ]; then
+    if [ $textured_terrain -eq 1 ]; then
+      a_s=
+    fi
+    if [ $solid_color_terrain -eq 0 \
+        -a $textured_terrain -eq 0 ]; then
+      c=$color_size_limit
+      if [ $x -gt $c -o $y -gt $c ]; then
+        a_s=-S
+      fi
+    fi
+    if [ $black_background -eq 0 ]; then
       a_t=-t
     fi
     echo "--- Running elm2pov.pl"
@@ -113,7 +171,7 @@ for p in "${args[@]}"; do
       -o "$r_map" -p "$t_pov" "$p" || exit 1
   fi
 
-  r_notes="render_notes-$n.png"
+  r_notes="$w/render_notes-$n.png"
   if [ $force -eq 1 -o ! -f "$r_notes" \
       -o "$f_notes" -nt "$r_notes" ]; then
     if [ -f "$f_notes" ]; then
@@ -123,24 +181,24 @@ for p in "${args[@]}"; do
     fi
   fi
 
-  r_mask="render_mask-$n.png"
-  if [ $force -eq 1 -o ! -f "$r_mask" \
+  r_mask="$w/render_mask-$n.png"
+  if [ $d_mask -eq 1 -o ! -f "$r_mask" \
       -o "$p" -nt "$r_mask" \
       -o "$i_rect" -nt "$r_mask" ]; then
     echo "--- Creating mask"
 
-    t_fill="temp_fill-$n.png"
+    t_fill="$w/temp_fill-$n.png"
     convert "$r_map" -alpha extract "$t_fill"
 
-    t_region="temp_region-$n.png"
+    t_region="$w/temp_region-$n.png"
     if [ $smooth_mask -eq 1 ]; then
-      t_tiles="temp_tiles-$n.png"
+      t_tiles="$w/temp_tiles-$n.png"
       elm-draw-tiles -s $size,$size \
         -o "$t_tiles" "$p" || exit 1
 
       l=$(($x < $y ? $x : $y))
       d=`echo "6 * $size / $l" | bc -l`
-      t_near="temp_near-$n.png"
+      t_near="$w/temp_near-$n.png"
       convert "$t_tiles" -blur 0x$d -threshold 1% \
         -blur 0x32 -threshold 50% \
         -blur 0x5 "$t_near"
@@ -155,14 +213,14 @@ for p in "${args[@]}"; do
       -compose darken -composite "$r_mask"
   fi
 
-  r_texture="render_paper_texture.png"
+  r_texture="$w/render_paper_texture.png"
   if [ $force -eq 1 -o ! -f "$r_texture" \
       -o "$i_paper" -nt "$r_texture" ]; then
     echo "--- Creating paper texture"
     convert "$i_paper" -colorspace gray "$r_texture"
   fi
-  r_bumpy="render_bumpy-$n.png"
-  if [ $force -eq 1 -o ! -f "$r_bumpy" \
+  r_bumpy="$w/render_bumpy-$n.png"
+  if [ $d_render -eq 1 -o ! -f "$r_bumpy" \
       -o "$r_map" -nt "$r_bumpy" \
       -o "$r_texture" -nt "$r_bumpy" ]; then
     echo "--- Applying bumpmap"
@@ -172,16 +230,16 @@ for p in "${args[@]}"; do
   fi
 
   echo "--- Merging layers"
-  r_base="render_base-$n.png"
-  if [ $force -eq 1 -o ! -f "$r_base" \
+  r_base="$w/render_base-$n.png"
+  if [ $d_render -eq 1 -o ! -f "$r_base" \
       -o "$r_bumpy" -nt "$r_base" \
       -o "$i_paper" -nt "$r_base" \
       -o "$r_mask" -nt "$r_base" ]; then
     composite "$r_bumpy" "$i_paper" "$r_mask" "$r_base"
   fi
-  t_framed="temp_framed-$n.png"
+  t_framed="$w/temp_framed-$n.png"
   composite -dissolve 60 "$i_grid" "$r_base" "$t_framed"
-  t_all="temp_all-$n.png"
+  t_all="$w/temp_all-$n.png"
   if [ -f "$r_notes" ]; then
     composite "$r_notes" "$t_framed" "$t_all"
   else

@@ -4,6 +4,7 @@ note_dir="./notes"
 font=BlackChancery
 size=1024
 scale=1.0
+w='.'
 
 die() { echo "$@"; exit 1; }
 
@@ -13,6 +14,7 @@ usage: $0 [options] NAME
 options:
   -n PATH   directory containing note files
   -s FLOAT  continent scale multiplier
+  -w PATH   directory for intermediate files
 EOS
   exit 1
 }
@@ -23,6 +25,7 @@ while [ $# -gt 0 ]; do
     -h|--help) usage ;;
     -n) shift; note_dir="$1" ;;
     -s) shift; scale="$1" ;;
+    -w) shift; w="$1" ;;
     *) args+=("$1") ;;
   esac
   shift
@@ -32,6 +35,8 @@ n=${args[0]}
 if [ -z "$n" ]; then
   die "expecting NAME argument"
 fi
+
+mkdir -p "$w" || die "could not create directory '$w'"
 
 o="$n.jpg"
 f_notes="$note_dir/$n-notes.txt"
@@ -50,7 +55,7 @@ if [ -f "$o" -a "$o" -nt "$f_notes" \
   exit 0
 fi
 
-r_notes="render_notes-$n.png"
+r_notes="$w/render_notes-$n.png"
 if [ ! -f "$r_notes" -o "$f_notes" -nt "$r_notes" ]; then
   echo "--- Rendering notes '$f_notes'"
   elm-render-notes -f "$font" \
@@ -59,7 +64,7 @@ if [ ! -f "$r_notes" -o "$f_notes" -nt "$r_notes" ]; then
 fi
 
 echo "--- Merging layers"
-t_all="temp_all-$n.png"
+t_all="$w/temp_all-$n.png"
 composite "$r_notes" "$f_merged" "$t_all"
 
 convert "$t_all" -quality 75 "$o"
