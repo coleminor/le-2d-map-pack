@@ -27,7 +27,7 @@
 1_kilaran -s
 1_kilaran_sud
 1_kilaran_sud_int
-1_morcraven_cave -s
+1_morcraven_cave -s -c
 1_morcraven
 1_morcraven_int2
 1_morcraven_int
@@ -65,7 +65,7 @@
 1_tarsengaard_palais_cave
 1_tarsengaard_palais
 1_tarsengaard_palais_jardin -s
-1_thyl_dur
+1_thyl_dur -b
 1_trepont
 1_trepont_int
 1_turquoise_laby -b
@@ -111,9 +111,9 @@
 2_irinveron_int
 2_irissadith_cave
 2_irissadith
-2_irissadith_gilde_magique -t
+2_irissadith_gilde_magique
 2_irissadith_int
-2_irissadith_souterrain
+2_irissadith_souterrain -c
 2_iscalrith_cave
 2_iscalrith
 2_iscalrith_int
@@ -132,7 +132,7 @@
 2_nargraw_nord_int
 2_nargraw_nord_volcan
 2_nargraw_sud
-2_nargraw_sud_int -t
+2_nargraw_sud_int
 2_nargraw_sud_mont
 2_nivros
 2_nivros_int
@@ -148,11 +148,11 @@
 2_saonar_kraw_laby4
 2_saonar_kraw_laby5
 2_saonar_kraw_laby6 -s
-2_styx -s -c
+2_styx
 2_temple_zarin
 2_thelinor_cave
 2_thelinor
-2_thelinor_int -t -s
+2_thelinor_int -s
 2_trassian_cave
 2_trassian
 2_trassian_int
