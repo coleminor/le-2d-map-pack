@@ -6,7 +6,7 @@
 168,321 l
 181,321 r
 14,269 >ill
-284,225 >tar
+284,225 >nar
 212,211 l
 337,15 >pie
 174,332 .Palais du Divin Fingel

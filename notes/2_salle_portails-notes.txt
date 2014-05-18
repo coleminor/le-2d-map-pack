@@ -1,5 +1,5 @@
-105,55 trani
-111,61 trida
+105,55 trida
+111,61 trani
 129,72 trirs
 129,86 trfen
 129,101 trniv
