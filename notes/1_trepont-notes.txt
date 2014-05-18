@@ -1,7 +1,7 @@
-92,18 =L'île du Trépont
+92,18 =Île du Trépont
 22,22 >pie
 72,140 .Bourg Elouin
 67,131 o
-162,152 .L'esprit
-149,111 .Le Bosquet d'Orasul
+162,152 .Esprit
+149,111 .Bosquet d'Orasul
 163,19 s

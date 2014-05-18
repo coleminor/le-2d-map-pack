@@ -2,11 +2,11 @@
 190,357 .Golfe d'Yrsis
 226,222 .Keleon Erch
 111,201 o
-85,254 .Université de magie
+85,254 .Université de Magie
 27,198 d
 164,141 .Kyriban
 233,54 .Keleon Ach
-283,114 .Ess'kyriban
+283,114 .Ess-Kyriban
 69,214 m
 323,41 s
 27,224 >irn

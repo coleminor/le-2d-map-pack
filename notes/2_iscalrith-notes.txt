@@ -8,5 +8,5 @@
 276,351 >irn
 263,322 d
 123,102 .Lac Myr Uan
-79,306 .Mer gelée d'Irvilion
+79,306 .Mer Gelée d'Irvilion
 250,29 s

@@ -4,7 +4,7 @@
 164,31 .Monts Glakhmor
 303,59 .Dra Se Manat
 360,233 >isc
-241,298 .Mer gelée d'Irvilion
+241,298 .Mer Gelée d'Irvilion
 84,339 .Pointe de Glakhmor
 19,312 >irn
 366,98 >tra

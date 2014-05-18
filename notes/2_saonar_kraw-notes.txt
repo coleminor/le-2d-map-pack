@@ -1,12 +1,12 @@
 90,25 =Saonar Kraw
-229,22 .Mer de glace
+229,22 .Mer de Glace
 281,62 .Kialgar
 124,98 .Emikher
 273,213 .Fort Qlamer
 288,106 .Fort Qlamer
 205,236 .Erogar
 328,326 .Mer du Grat Eder
-37,364 .Mer gelée d'Irvilion
+37,364 .Mer Gelée d'Irvilion
 32,183 .Triagar
 76,231 >isc
 120,302 .Ghalivrer

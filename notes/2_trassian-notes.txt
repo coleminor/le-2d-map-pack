@@ -1,5 +1,5 @@
 45,14 =Trassian
-143,26 .Mer de glace
+143,26 .Mer de Glace
 183,137 >hul
 170,182 d
 56,96 .Dra Syn

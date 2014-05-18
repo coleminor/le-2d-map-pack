@@ -1,4 +1,4 @@
-109,35 =Désert de Tahraji
+109,35 =Désert de Taharaji
 272,64 .Vallée de Tegriat
 286,311 .Ruines de Matajin
 153,244 .Arène des Invocateurs
