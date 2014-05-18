@@ -48,7 +48,7 @@ if [ ! -f "$r_notes" -o "$f_notes" -nt "$r_notes" ]; then
     die "$i_paper: could not get image size"
   fi
   elm-render-notes -f "$font" -i $x,$y -t 50 \
-    -m $x,$y -o "$r_notes" "$f_notes" || exit 1
+    -m $x,$y -o "$r_notes" -r 28 "$f_notes" || exit 1
 fi
 
 echo "--- Merging layers"
