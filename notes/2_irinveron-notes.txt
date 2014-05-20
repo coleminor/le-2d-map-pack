@@ -7,9 +7,12 @@
 27,305 d
 72,336 .Pointe d'Erkraw
 378,281 .Lac J'awen
-150,542 m
+157,535 m
 192,592 o
 548,166 .Daa Gry
 734,297 >gla
 733,645 >gla
 684,64 s
+139,577 r
+150,619 .Candol Egret
+326,550 f
