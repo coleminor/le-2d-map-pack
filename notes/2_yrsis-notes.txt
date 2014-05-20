@@ -1,10 +1,10 @@
 50,45 =Yrsis
 238,27 .Aeth Yrsis
-297,205 .Forêt de Vyrsaliss
+312,147 .Forêt de Vyrsaliss
 369,248 >fen
 273,366 >ida
-57,269 .Mer d'Irilion
-117,156 .Port Yrsis
-172,184 .Lothyrsiss
+54,263 .Mer d'Irilion
+74,160 .Port Yrsis
+165,208 .Lothyrsiss
 49,87 >ari
 335,30 s
