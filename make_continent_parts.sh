@@ -1,6 +1,6 @@
 #!/bin/bash
 f=mapinfo.lst
-map_dir=../maps
+map_dir=./maps
 c=Seridia
 s=1.0
 w='.'
