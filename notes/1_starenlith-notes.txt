@@ -1,6 +1,6 @@
 339,366 >gal
 362,330 >ill
-366,314 >cdp
+365,315 >cdp
 25,306 >gal
 120,328 .Désert des Pins
 198,138 .Starath Lin
@@ -10,15 +10,19 @@
 366,13 t
 113,163 t
 108,52 t
-298,285 .Coren
+298,285 .Corren
 51,60 .Terres Arides
 72,20 =Starenlith
 328,337 m
 309,338 o
 173,16 >cdp
 17,220 >tah
-366,54 >kis
+367,53 >kis
 369,265 >kil
 357,351 >pie
 303,30 s
 289,264 w
+322,307 l
+198,73 f
+47,147 .Monts Pourpres
+60,253 .Arène
