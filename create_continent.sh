@@ -55,6 +55,8 @@ if [ -f "$o" -a "$o" -nt "$f_notes" \
   exit 0
 fi
 
+echo "=== Processing continent $n"
+
 r_notes="$w/render_notes-$n.png"
 if [ ! -f "$r_notes" -o "$f_notes" -nt "$r_notes" ]; then
   echo "--- Rendering notes '$f_notes'"
