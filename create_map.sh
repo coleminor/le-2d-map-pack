@@ -141,8 +141,7 @@ for p in "${args[@]}"; do
   if [ -z "$x" -o -z "$y" ]; then
     die "could not get map size from '$p'"
   fi
-  echo "=== Processing $n ${x}x$y" \
-    "$s_render $s_mask"
+  echo "=== Processing $n ${x}x$y $s_render $s_mask"
 
   r_map="$w/render_map-$n.png"
   t_pov="$w/temp_scene-$n.pov"
