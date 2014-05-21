@@ -3,7 +3,7 @@
 324,60 .Pointe du Lothal
 342,150 .Port Aeth
 321,211 .Aeth Lothal
-303,336 .Vallée du Coeur Sombre
+303,336 .Vallée du Cœur Sombre
 194,365 .Chutes du Lothal
 147,342 .Vyhaliss
 108,190 .Lothaliss
