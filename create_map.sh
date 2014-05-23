@@ -166,8 +166,14 @@ for p in "${args[@]}"; do
       a_t=-t
     fi
     echo "--- Running elm2pov.pl"
+    if [ -f "$r_map" ]; then
+      rm -f "$r_map" || exit 1
+    fi
     elm2pov.pl -r -m -a -s $size $a_s $a_t \
       -o "$r_map" -p "$t_pov" "$p" || exit 1
+    if [ ! -f "$r_map" ]; then
+      die "failed to create rendered map '$r_map'"
+    fi
   fi
 
   r_notes="$w/render_notes-$n.png"
