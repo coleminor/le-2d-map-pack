@@ -8,7 +8,7 @@
 84,339 .Pointe de Glakhmor
 19,312 >irn
 366,98 >tra
-335,31 s
+147,27 s
 215,168 .Forêt Ssai
 216,66 .Temple de Glace
 302,43 a
