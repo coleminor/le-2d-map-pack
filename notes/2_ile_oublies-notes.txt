@@ -1,8 +1,8 @@
 21,31 .Temple du Dryx
 67,14 =Île des Oubliés
-126,53 .Ort Kraw
+118,52 .Ort Kraw
 85,93 r
 40,130 o
 51,150 d
-93,117 .Bekar Kraw
+85,110 .Bekar Kraw
 167,17 s

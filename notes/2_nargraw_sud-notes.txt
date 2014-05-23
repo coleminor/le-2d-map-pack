@@ -1,10 +1,10 @@
 91,30 =Nargraw Sud
-153,78 .Emekher-Um
-100,57 .Île d'Emekher
-187,236 .Nargrash
-183,269 m
-200,263 o
-171,205 d
+176,62 .Emekher-Um
+120,103 .Île d'Emekher
+187,234 .Nargrash
+183,267 m
+197,262 o
+171,203 d
 79,358 >nan
 252,33 s
 176,18 >nuk

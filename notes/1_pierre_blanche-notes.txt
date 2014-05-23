@@ -24,7 +24,7 @@
 573,156 m
 153,201 .Bourg Thylion
 505,142 t
-144,250 t
+144,247 t
 61,413 .Montagnes d'Orvale
 29,561 >cdp
 112,51 >zor
@@ -43,4 +43,4 @@
 250,340 w
 639,685 w
 650,387 w
-316,618 .Froideforêt
+295,587 .Froideforêt

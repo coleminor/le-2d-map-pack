@@ -1,4 +1,4 @@
-128,174 .Tryssir Sud
+148,173 .Tryssir Sud
 148,71 =Idaloran
 286,143 .Rivière Idalo
 541,219 d
