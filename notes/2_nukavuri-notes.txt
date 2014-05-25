@@ -1,8 +1,8 @@
 36,13 =Nukavuri
 50,55 d
-155,78 >zir
-127,101 >mel
+155,78 @zir
+127,101 @mel
 135,140 .Île d'Egmura
 60,85 .Bourg Nukavuri
 163,17 s
-147,100 >nas
+147,100 @nas

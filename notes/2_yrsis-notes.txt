@@ -6,5 +6,5 @@
 54,263 .Mer d'Irilion
 74,160 .Port Yrsis
 165,208 .Lothyrsiss
-49,87 >ari
+49,87 @ari
 335,30 s

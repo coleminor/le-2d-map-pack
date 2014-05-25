@@ -12,10 +12,10 @@
 133,666 .Mer d'Irilion
 223,565 .Côte du Jahir
 226,381 .Cimetière
-163,281 >ani
-164,260 >irn
-164,244 >mel
-164,226 >nan
+163,281 @ani
+164,260 @irn
+164,244 @mel
+164,226 @nan
 447,40 >fen
 571,83 m
 631,131 .Divrekhar

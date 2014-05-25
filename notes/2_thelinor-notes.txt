@@ -5,7 +5,7 @@
 99,159 .Marh Kraw
 114,347 .Thelin Kraw
 297,287 l
-270,266 >nan
+270,266 @nan
 46,18 >zir
 16,269 >irs
 303,28 s

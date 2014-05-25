@@ -1,6 +1,6 @@
 128,38 =Péninsule de Zork'len
 255,251 .Mer des Brumes
-319,123 >cdp
+319,123 @cdp
 298,93 .Omlinor
 61,132 .Ywarstav
 64,113 l

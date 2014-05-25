@@ -1,5 +1,5 @@
 53,19 =Pointe d'Égratia
-54,44 >isc
+54,44 @isc
 53,83 .Plaine d'Égratia
 135,65 .Arène Egret
 135,10 .Mer Glacée d'Arvilion

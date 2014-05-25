@@ -19,8 +19,8 @@
 590,151 o
 529,194 .Cité de la Rive
 672,93 .Lac de Serpentine
-726,134 >sta
-709,152 >tre
+726,134 @sta
+709,152 @tre
 573,156 m
 153,201 .Bourg Thylion
 509,147 t

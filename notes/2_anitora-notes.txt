@@ -1,7 +1,7 @@
 86,35 =Port Anitora
 103,245 .Anitora Ouest
 208,123 .Anitora Est
-290,184 >ida
+290,184 @ida
 305,301 .Mer d'Irilion
 322,42 s
 226,180 r

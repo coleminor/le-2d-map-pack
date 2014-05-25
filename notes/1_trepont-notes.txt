@@ -1,5 +1,5 @@
 92,16 =Île du Trépont
-22,22 >pie
+20,20 @pie
 72,140 .Bourg Elouin
 67,131 o
 162,152 .Esprit
