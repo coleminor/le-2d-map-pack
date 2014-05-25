@@ -24,6 +24,5 @@
 474,243 .Cité d'Idaloran
 633,32 >kus
 158,34 >yrs
-734,245 >irs
 349,56 s
-136,303 .Port de Tryssir
+160,302 .Port de Tryssir

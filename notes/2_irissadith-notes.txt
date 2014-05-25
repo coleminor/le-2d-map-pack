@@ -1,6 +1,6 @@
-145,27 =Irissadith
+82,58 =Irissadith
 336,43 o
-330,82 d
+331,88 d
 319,365 >niv
 231,181 .Salingen
 317,193 p
@@ -9,6 +9,7 @@
 326,23 >zir
 48,22 >kus
 183,364 >kia
-15,248 >ida
-244,29 s
+204,25 s
 294,179 m
+331,66 .Bourg Tresoar
+42,358 .École de Magie
