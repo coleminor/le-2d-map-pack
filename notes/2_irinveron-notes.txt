@@ -4,7 +4,7 @@
 151,690 @isc
 183,675 @ida
 184,657 @ari
-27,305 d
+37,313 d
 72,336 .Pointe d'Erkraw
 378,281 .Lac J'awen
 157,535 m
