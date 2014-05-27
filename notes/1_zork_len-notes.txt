@@ -2,7 +2,7 @@
 255,251 .Mer des Brumes
 319,123 @cdp
 298,93 .Omlinor
-61,132 .Ywarstav
+66,123 .Ywarstav
 64,113 l
 64,321 .Marais du Styx
 17,350 >nar
