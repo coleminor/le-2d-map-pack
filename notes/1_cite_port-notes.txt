@@ -16,3 +16,5 @@
 80,41 =Cité du Port
 229,27 s
 326,236 w
+162,268 .Hameau des Deux Ponts
+269,122 .Bourg Deniem
