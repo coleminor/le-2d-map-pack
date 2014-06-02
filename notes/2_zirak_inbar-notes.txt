@@ -1,8 +1,8 @@
-196,52 .Lacs Gurham
+200,47 .Lacs Gurham
 310,76 @nuk
 265,95 .Port Zirak
 104,131 .Kasteel Azaghâl
-220,228 .Crypte Zirak
+224,227 .Crypte Zirak
 313,160 .Fûrgham
 240,350 >the
 79,279 d

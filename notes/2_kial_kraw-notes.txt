@@ -1,8 +1,8 @@
 65,15 =Kial Kraw
 119,157 d
 123,173 l
-66,117 .Désert de Vikhrad
-125,110 .Ruines de Kial Kraw
+88,83 .Désert de Vikhrad
+117,131 .Ruines de Kial Kraw
 19,22 >ida
 174,129 >niv
 177,32 >irs

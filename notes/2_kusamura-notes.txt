@@ -2,7 +2,7 @@
 63,101 .Akuen
 365,119 >zir
 354,22 .Bourg Udakhar
-243,212 .Ezekhar
+246,230 .Ezekhar
 329,361 >irs
 229,363 >ida
 17,201 >fen
