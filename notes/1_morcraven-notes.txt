@@ -1,9 +1,9 @@
 56,144 d
-281,54 .Fort Ellion
-211,171 .Fort Inchyn
+284,76 .Fort Ellion
+214,187 .Fort Inchyn
 110,28 =Morcraven
 117,292 .Peksin
-125,190 .Les Marais
+123,171 .Les Marais
 288,233 .Tankel
 188,16 >nar
 249,362 >cdp
@@ -11,3 +11,6 @@
 40,335 .Mer Bleue
 341,37 s
 73,82 w
+234,177 o
+203,159 m
+88,281 r
