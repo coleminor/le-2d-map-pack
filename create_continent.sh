@@ -41,6 +41,7 @@ mkdir -p "$w" || die "could not create directory '$w'"
 o="$n.jpg"
 f_notes="$note_dir/$n-notes.txt"
 f_merged="merged-$n.png"
+f_routes="render_routes-$n.png"
 
 if [ ! -f "$f_notes" ]; then
   die "note file '$f_notes' not found"
@@ -50,7 +51,8 @@ if [ ! -f "$f_merged" ]; then
 fi
 
 if [ -f "$o" -a "$o" -nt "$f_notes" \
-    -a "$o" -nt "$f_merged" ]; then
+    -a "$o" -nt "$f_merged" \
+    -a "$o" -nt "$f_routes" ]; then
   echo "~~~ $o is up-to-date"
   exit 0
 fi
@@ -66,10 +68,18 @@ if [ ! -f "$r_notes" -o "$f_notes" -nt "$r_notes" ]; then
 fi
 
 echo "--- Merging layers"
+t_base="$w/temp_base-$n.png"
+if [ -f "$f_routes" ]; then
+  echo "--- Using route overlay '$f_routes'"
+  composite "$f_routes" "$f_merged" "$t_base"
+else
+  cp "$f_merged" "$t_base"
+fi
+
 t_all="$w/temp_all-$n.png"
-composite "$r_notes" "$f_merged" "$t_all"
+composite "$r_notes" "$t_base" "$t_all"
 
 convert "$t_all" -quality 75 "$o"
 echo "=== Finished $o"
 
-rm -f "$t_all"
+rm -f "$t_base" "$t_all"
