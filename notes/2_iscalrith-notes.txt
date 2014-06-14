@@ -6,7 +6,7 @@
 243,348 @egr
 257,340 @sao
 276,351 @irn
-263,322 d
+259,323 d
 155,106 .Lac Myr Uan
 79,306 .Mer Gelée d'Irvilion
 253,26 s
