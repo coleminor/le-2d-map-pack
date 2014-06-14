@@ -6,6 +6,7 @@
 1_cite_port_temple_metal
 1_debutant_int -b
 1_equipee_gobeline
+1_equipee_gobelineprovi
 1_equipee_pirate
 1_fosse
 1_galeinth_aseyis
