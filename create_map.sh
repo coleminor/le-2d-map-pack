@@ -18,7 +18,7 @@ i_rect="rect.png"
 i_grid="grid.png"
 i_paper="paper.png"
 
-die() { echo "$@";  exit 1; }
+die() { echo "$@"; exit 1; }
 
 usage() {
   c=$color_size_limit
