@@ -26,3 +26,5 @@
 198,73 f
 47,147 .Monts Pourpres
 60,256 .Arène
+85,189 .Enur
+126,258 .Thyl-Dûr
